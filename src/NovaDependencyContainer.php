@@ -106,7 +106,7 @@ class NovaDependencyContainer extends Field
      */
     protected function fillAttributeFromRequest(NovaRequest $request, $requestAttribute, $model, $attribute)
     {
-        foreach ($this->meta['fields'] as $field) 
+        foreach ($this->meta['fields'] as $field) {
             $field->fillAttributeFromRequest($request, $requestAttribute, $model, $attribute);
         }
     }
